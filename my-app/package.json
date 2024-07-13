@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@dpt-ext-ui/utils": "^1.4.3",
-    "@dpt-ui/runtime": "^3.0.13",
+    "@dpt-ext-ui/utils": "^1.0.0",
+    "@dpt-ui/runtime": "^1.0.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,11 +12,11 @@
     "@types/node": "^16.18.101",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "dpt-ext-ui-diagram": "^2.2.8",
-    "dpt-ext-ui-gantt": "^4.1.55",
-    "dpt-ui": "^24.1.3",
-    "dpt-ui-quill": "^1.7.1",
-    "dpt-ui-react": "^24.1.3",
+    "dpt-ext-ui-diagram": "^1.0.0",
+    "dpt-ext-ui-gantt": "^1.0.0",
+    "dpt-ui": "^1.0.0",
+    "dpt-ui-quill": "^1.0.0",
+    "dpt-ui-react": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -27,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "uninstall-local-registry": "npm un dpt-ui && npm un @dpt-ext-ui/utils && npm un @dpt-ui/runtime && npm un dpt-ext-ui-diagram && npm un dpt-ext-ui-gantt && npm un dpt-ui-quill && npm un dpt-ui-react",
+    "install-local-registry": "npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ dpt-ui && npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ @dpt-ext-ui/utils && npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ @dpt-ui/runtime && npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ dpt-ext-ui-diagram && npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ dpt-ext-ui-gantt && npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ dpt-ui-quill && npm i --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ dpt-ui-react"
   },
   "eslintConfig": {
     "extends": [
