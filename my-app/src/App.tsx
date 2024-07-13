@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import TextBox, { TextBoxTypes } from 'devextreme-react/text-box';
+import TextBox, { TextBoxTypes } from 'dpt-ui-react/text-box';
 const nameLabel = { 'aria-label': 'Name' };
 const fullNameLabel = { 'aria-label': 'Full Name' };
 const passwordLabel = { 'aria-label': 'Password' };
