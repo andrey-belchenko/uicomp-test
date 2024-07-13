@@ -14,8 +14,17 @@ def npm_publish(folder_path):
     res = os.system(cmdText)
     if res != 0:
         raise Exception("Error while executing: " + cmdText)
-    # subprocess.check_call(['cd', folder_path], shell=True)
-    # subprocess.check_call(['npm', 'publish'], shell=True)
+
+
+def install_package(project_path, package_name):
+    os.chdir(project_path)
+    cmdText = (
+        "npm install --registry http://gl.astu.lan/api/v4/projects/108/packages/npm/ "
+        + package_name
+    )
+    res = os.system(cmdText)
+    if res != 0:
+        raise Exception("Error while executing: " + cmdText)
 
 
 def grab_package(package_name: str, package_names: list[str]):
@@ -71,5 +80,8 @@ packages = [
 # for item in packages:
 #     grab_package(item, packages)
 
+# for item in packages:
+#     publish_package(item)
+
 for item in packages:
-    publish_package(item)
+    install_package(r"C:\Repos\mygithub\uicomp-test\my-app", item)
