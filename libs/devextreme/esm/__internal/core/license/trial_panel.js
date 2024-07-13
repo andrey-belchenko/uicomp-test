@@ -129,9 +129,9 @@ class DxLicense extends SafeHTMLElement {
         return contentContainer
     }
     _reassignComponent() {
-        this.that.innerHTML = "";
-        this.that.style.cssText = this._containerStyles;
-        this.that.append(this._createContentContainer(), this._createButton())
+        // this.that.innerHTML = "";
+        // this.that.style.cssText = this._containerStyles;
+        // this.that.append(this._createContentContainer(), this._createButton())
     }
     connectedCallback() {
         this._reassignComponent();

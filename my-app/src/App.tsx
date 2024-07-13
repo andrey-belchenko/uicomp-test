@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from 'react';
 import TextBox, { TextBoxTypes } from 'devextreme-react/text-box';
-import {info} from "duicomp"
 const nameLabel = { 'aria-label': 'Name' };
 const fullNameLabel = { 'aria-label': 'Full Name' };
 const passwordLabel = { 'aria-label': 'Password' };
@@ -107,7 +106,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div>{info()}</div>
     </div>
   );
 }
